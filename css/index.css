@@ -1,0 +1,265 @@
+:root {
+	--background-cabecalho:#BBBBBB;
+	--fonte-cabecalho: black;
+	--fonte-cabecalho-selecao: #C78C19;
+	--background-cabecalho-selecao: #d6d4d4;
+	--botao: #726bac;
+	--botao-sombra:#c4bef8;
+	--background-imc-cabecalho: #a09cc7;
+	--background-imc-corpo: #eceaf8;
+}
+
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: var(--background-cabecalho);
+	height: 7em;
+	color: var(--fonte-cabecalho);
+	margin-bottom: 1em;
+}
+
+.titulo__header{
+	font-size: 2.2em;
+	display:inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+nav {
+	position:absolute;
+	top: 43px;
+	right: 150px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 50px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: var(--fonte-cabecalho);
+	font-weight:700;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 1em;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-color:var(--background-cabecalho-selecao);
+
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+.titulo__secundario {
+	font-size: 2em;
+	display: block;
+	padding-top: 0.7em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+.filtro__tabela{
+	border-radius: 5px; 
+	margin: 0;
+	border: 1px solid #ccc;
+	padding: .7em;
+	
+}
+
+.titulo__filtro{
+	color: #555;
+	display: block;
+	margin-bottom: .6em;
+	font-size: 15px;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout:auto;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+	width: 20%;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+/*
+.paciente::after{
+	content: "";
+	background-image: url(../img/trash.svg);
+	display: inline-flex;
+	align-items:center;
+	width: 18px;
+	height: 18px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 5px;
+}
+
+.paciente:hover::after{
+	transform: scale(1.2);
+}
+*/
+
+.imagem__lixeira{
+	width: 16px;
+	height: 16px;
+}
+
+.imagem__lixeira:hover {
+	width: 18px;
+	height: 18px;
+}
+
+.imagem-lixeira{
+	border: none;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.formulario{
+	display: grid;
+	width: 100%;
+	column-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;	
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: auto;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: 0.5em 2em;
+	border: 0;
+	font-size: 1.2em;
+	cursor: pointer;
+	color: #fff;
+	background-color:var(--botao);
+	border-radius: 5px;
+	width: 95%;
+    display: inline-block;
+    clear: both;
+    margin: 15px 0px;
+	box-shadow: 0 3px var(--botao-sombra);
+	margin-left: 5px;
+
+}
+
+button:hover{
+	transform: scale(1.04);
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 40px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+/*Criei essa classe para o javascript atraves do classList.add e nao para o HTML. 
+Ela nao existe no HTML se eu procurar.*/
+.paciente-invalido{
+	background-color: lightcoral;
+}
+
+#mensagens-erro{
+	color: red;
+	padding: 0 0;
+	line-height: 1.3em;
+}
+
+/* Vou criar ou classe para usar no remover-paciente.js */
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 255px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+/*Criada para usar no filtra.js */
+.invisivel {
+	display: none;
+}
+
+.th__imc{
+	background-color: var(--background-imc-cabecalho);
+}
+
+.info-imc{
+	background-color: var(--background-imc-corpo) ;
+}
