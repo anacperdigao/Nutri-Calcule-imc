@@ -30,7 +30,7 @@
 				<ul id="mensagens-erro">
 
 				</ul>
-				<form class="formulario" id="form-adiciona">
+				<form class="formulario__imc" id="form-adiciona">
 					<div class="grupo">
 						<label class="titulo__filtro" for="nome">Nome:</label>
 						<input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="campo">
@@ -44,13 +44,13 @@
 						<input id="altura" name="altura" type="text" placeholder="Digite sua altura | Ex: 1.70" class="campo campo-medio">
 					</div>
 					
-					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+					<button id="adicionar-paciente" class="bto-principal">Adicionar</button>
 
 				</form>
 			</section>
 			
 			<section class="container container__tabela">
-				<h2 class="titulo__secundario">Resultado</h2>
+				<h2 class="titulo__secundario">Resultado IMC</h2>
 				<label for="filtrar-tabela" class="titulo__filtro">Filtre: (Adicione quantas pessoas quiser)</label>	
 				<input type="text" name="filtro" id="filtrar-tabela" class="filtro__tabela" placeholder="Digite o nome que deseja buscar">
 				
@@ -81,8 +81,18 @@
 					</tbody>
 				</table>
 			</section>
-
-	</main>
+		</main>
+		
+		<footer>
+			<p class="copyright">&copy; Copyright Julia Nutricionista - 2022</p>
+			
+			<ul class="lista__icones">
+				<li><a href="#"><img src="/img/instagram.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/facebook.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/linkedin.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/twitter.png" width="40" height="40"></a></li>
+			</ul>
+		</footer>
 
 	<script src="js/calcula-imc.js"></script>
 	<script src="js/form.js"></script>

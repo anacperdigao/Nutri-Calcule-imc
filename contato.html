@@ -23,7 +23,63 @@
 				</nav>
 			</div>
 		</header>
-    
+		
+		<main class="container__contato">
+			<div class="container__titulo-secundario">
+				<h2 class="titulo__secundario" id="titulo-form">Me mande uma mensagem</h2>
+			</div>
+			<div class="formulario__contato">
+				<form>
+					<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e sobrenome">
+					
+					<input type="email" id="email" class="input-padrao" required placeholder="Email: seuemail@dominio.com">
+
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="Telefone: (XX) XXXXX-XXXX">
+
+					<textarea cols="70" rows="4" id="mensagem" class="input-padrao" required placeholder="Como posso te ajudar?"></textarea>
+			</div>
+
+			<div class="container__fieldset">
+					<fieldset>
+						<legend class="legenda__fieldset">Como prefere o nosso contato?</legend>
+						
+						<label for="radio-email"><input class="input-secundario" type="radio" name="contato" value="email" id="radio-email">Email</label>
+						<label for="radio-telefone"><input class="input-secundario" type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+						<label for="radio-whatsapp"><input class="input-secundario" type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+					</fieldset>
+
+					<fieldset>
+						<legend class="legenda__fieldset">Qual horário prefere ser atentido?</legend>
+						
+						<select>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</fieldset>
+
+					<label class="legenda__fieldset" id="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+					
+				</form>			
+			</div>
+
+			<div class="container__botao">
+			<button type="submit" class="botao bto-principal">Enviar</button>
+			</div>
+
+		</main>
+		
+		<footer>
+			<p class="copyright">&copy; Copyright Julia Nutricionista - 2022</p>
+			
+			<ul class="lista__icones">
+				<li><a href="#"><img src="/img/instagram.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/facebook.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/linkedin.png" width="40" height="40"></a></li>
+				<li><a href="#"><img src="/img/twitter.png" width="40" height="40"></a></li>
+			</ul>
+		</footer>
+
     <script src="js/calcula-imc.js"></script>
 	
     </body>

@@ -109,7 +109,7 @@ section{
 
 table{
 	width: 100%;
-	margin-bottom : .5em;
+	margin-bottom : 2em;
     table-layout:auto;
 
 }
@@ -169,11 +169,11 @@ th{
 	border-radius: 5px;
 }
 
-.formulario{
+.formulario__imc{
 	display: grid;
 	width: 100%;
 	column-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .campo-medio{
@@ -187,7 +187,7 @@ th{
 	padding: 10px 0px;
 }
 
-button{
+.bto-principal{
 	padding: 0.5em 2em;
 	border: 0;
 	font-size: 1.2em;
@@ -195,7 +195,7 @@ button{
 	color: #fff;
 	background-color:var(--botao);
 	border-radius: 5px;
-	width: 95%;
+	width: 90%;
     display: inline-block;
     clear: both;
     margin: 15px 0px;
@@ -204,16 +204,16 @@ button{
 
 }
 
-button:hover{
+.bto-principal:hover{
 	transform: scale(1.04);
 }
 
-button:active{
+.bto-principal:active{
 	margin-top:0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
+.bto-principal[disabled=disabled], .bto-principal:disabled {
     background-color: gray;
 	border-color: darkgray;
 
@@ -263,3 +263,102 @@ Ela nao existe no HTML se eu procurar.*/
 .info-imc{
 	background-color: var(--background-imc-corpo) ;
 }
+
+footer {
+	background-color: var(--background-cabecalho);
+	height: 10em;
+	margin-top: 3em;
+	text-align: center;
+	
+}
+
+.copyright{
+	margin-top: 7em;
+	position:absolute;
+	margin-left: 40%;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 15px;
+	margin: 0 0 10px;
+}
+
+form {
+	margin: 30px 0px;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 15px;
+	padding: 10px 25px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.container__contato{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content:space-between;
+	width:100%;
+	padding: 0 10%;
+	gap: 0 20px;
+}
+
+.container__botao{
+	grid-column: span 2;
+	text-align:center;
+	width: 100%;
+}
+
+.botao{
+	width: 30%;
+	margin: 0px 0px 30px 0;
+}
+
+.legenda__fieldset{
+	padding-top: 25px;
+
+}
+
+fieldset{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+fieldset label{
+	padding: 3px;
+}
+
+select{
+	width: 100px;
+	height: 28px;
+	margin-bottom: 20px;
+}
+
+.container__titulo-secundario{
+	grid-column: span 2;
+	width: 100%;
+}
+
+.lista__icones{
+	display: flex;
+	justify-content: center;	
+}
+
+.lista__icones li{
+	padding: 30px 30px;
+}
+
+.lista__icones li:hover{
+	transform: scale(1.1);
+}
+
