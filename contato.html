@@ -30,11 +30,11 @@
 			</div>
 			<div class="formulario__contato">
 				<form>
-					<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e sobrenome">
+					<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e sobrenome *">
 					
-					<input type="email" id="email" class="input-padrao" required placeholder="Email: seuemail@dominio.com">
+					<input type="email" id="email" class="input-padrao" required placeholder="Email: seuemail@dominio.com *">
 
-					<input type="tel" id="telefone" class="input-padrao" required placeholder="Telefone: (XX) XXXXX-XXXX">
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="Telefone: (XX) XXXXX-XXXX *">
 
 					<textarea cols="70" rows="4" id="mensagem" class="input-padrao" required placeholder="Como posso te ajudar?"></textarea>
 			</div>
@@ -64,7 +64,7 @@
 			</div>
 
 			<div class="container__botao">
-			<button type="submit" class="botao bto-principal">Enviar</button>
+			<button onclick="mensagem()" type="submit" class="botao bto-principal">Enviar</button>
 			</div>
 
 		</main>
@@ -80,7 +80,7 @@
 			</ul>
 		</footer>
 
-	<script src="js/menu-pressionado.js"></script>
+	<script src="js/form-contato.js"></script>
 	
     </body>
 </html>

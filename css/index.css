@@ -386,3 +386,20 @@ body#pag-index a#a-index{
 	text-decoration: none;
 	background-color:var(--background-cabecalho-selecao);
 }
+
+#nomesobrenome::placeholder {
+	color:coral;
+}
+
+#email::placeholder {
+	color:coral;
+}
+
+#telefone::placeholder {
+	color:coral;
+}
+
+.input-padrao::placeholder{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+}
