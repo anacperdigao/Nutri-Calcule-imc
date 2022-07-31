@@ -44,12 +44,14 @@ nav {
 	right: 150px;
 }
 
+
 nav li {
 	display: inline;
 	margin: 0 0 0 50px;
 }
 
-nav a {
+
+.menu {
 	text-transform: uppercase;
 	color: var(--fonte-cabecalho);
 	font-weight:700;
@@ -59,10 +61,9 @@ nav a {
 	border-radius: 5px;
 }
 
-nav a:hover {
+.menu:hover {
 	text-decoration: none;
 	background-color:var(--background-cabecalho-selecao);
-
 }
 
 header .container:before{
@@ -362,3 +363,26 @@ select{
 	transform: scale(1.1);
 }
 
+.container__imagem-imc{
+	padding-top: 20px;
+	display: flex;
+	justify-content: center
+}
+
+/*Estilizando o nav para a pagina corrente*/
+body#pag-imc a#a-imc {
+	text-decoration: none;
+	background-color:var(--background-cabecalho-selecao);
+}
+
+/*Estilizando o nav para a pagina corrente*/
+body#pag-contato a#a-contato{
+	text-decoration: none;
+	background-color:var(--background-cabecalho-selecao);
+}
+
+/*Estilizando o nav para a pagina corrente*/
+body#pag-index a#a-index{
+	text-decoration: none;
+	background-color:var(--background-cabecalho-selecao);
+}

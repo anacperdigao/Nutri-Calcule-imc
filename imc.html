@@ -9,16 +9,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
 	</head>
-	<body>
+	<body id="pag-imc">
 
 		<header>
 			<div class="container container__header">
 				<h1 class="titulo__header">Julia Nutricionista</h1>
 				<nav>
-					<ul>
-						<li><a href="index.html">Sobre mim</a></li>
-						<li><a href="imc.html">Calcule seu IMC</a></li>
-						<li><a href="contato.html">Contatos</a></li>
+					<ul id="nav">
+						<li><a href="index.html" id="a-index" class="menu">Sobre mim</a></li>
+						<li><a href="imc.html" id="a-imc" class="menu">Calcule seu IMC</a></li>
+						<li><a href="contato.html" id="a-contato" class="menu">Contatos</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -81,6 +81,11 @@
 					</tbody>
 				</table>
 			</section>
+			
+			<section class="container container__imagem-imc">
+				<img src="/img/tabela_imc.png" width="400" height="250" class="imagem__imc">
+			</section>
+
 		</main>
 		
 		<footer>
@@ -99,6 +104,7 @@
 	<script src="js/remover-paciente.js"></script>
 	<script src="js/filtra.js"></script>
 	<script src="js/buscar-pacientes.js"></script>
+	<script src="js/menu-pressionado.js"></script>
 	
 	</body>
 </html>
