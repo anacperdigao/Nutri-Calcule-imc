@@ -1,0 +1,136 @@
+@media screen and (max-width: 480px) {  
+     
+    main{
+        padding: 0px 30px;
+    }
+    
+    header{
+        height: 10em;
+        margin-bottom: 1em;
+        padding-left: 13vw;
+    }
+    
+    .titulo__header{
+        display:inline-block;
+    }
+    
+    nav {
+        position:absolute;
+        top: 100px;
+        right: 30px;
+        padding-bottom: 20px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav li {
+        margin: 0 0 0 0px;
+    }
+    
+    nav li a{
+        display: inline-block;
+    }
+
+    .menu{
+        font-size: 12px;
+        padding: 0.7em;
+    }
+    
+    header .container:before{
+        height: 80%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    
+    .titulo__secundario {
+        font-size: 1.5em;
+    }
+    
+    .formulario__imc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bto-principal{
+        width: 95%;
+        margin-left: 7px;    
+    }
+
+    .imagem__imc{
+        width: 300px;
+        height: 200px;
+    }
+    
+    #filtrar-tabela {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    
+    footer {
+        margin-top: 1.5em;      
+    }
+    
+    .copyright{
+        margin-top: 7em;
+        position:absolute;
+        margin-left: 17%;
+    }
+
+    form {
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .container__contato{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+    
+    .botao{
+        width: 95%;
+        margin: 20px 0px;
+    }
+    
+    fieldset{
+        margin-top: 0px;
+    }
+    
+    .lista__icones li{
+        padding: 30px 15px;
+    }
+    
+    .container__img-paragrafo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .slider {
+        height: 320px;
+        width: 80vw;
+    }
+
+    .slider li:nth-child(1) label {
+    left: 13px;
+    }
+
+    .slider li:nth-child(2) label {
+    left: 270px;
+    }
+
+    .slider label {
+        bottom: 150px;
+    }
+
+    .container__imagem-imc{
+        padding: 20px 0px;
+    }
+
+}
