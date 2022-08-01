@@ -5,7 +5,7 @@ function mensagem(){
     var nome = document.querySelector("#nomesobrenome").value;
     
     if (nome) {
-    alert('Olá ' + nome + ', vou entrar em contato com você em até 24h.');
+    alert('Olá ' + nome + ', obrigada pela mensagem. Entrarei em contato em até 24h.');
     }
 }
 

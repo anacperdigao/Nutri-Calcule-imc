@@ -403,3 +403,81 @@ body#pag-index a#a-index{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
 }
+
+.paragrafo__sobre-mim {
+	line-height: 2em;
+	padding: 10px;
+	float: right;
+	shape-outside: circle();
+}
+
+.imagem_julia{
+	border-radius: 50%;
+	margin: 0 20px;
+}
+
+.container__img-paragrafo{
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.slider {
+    display: block;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 200px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+	border-radius: 50%;
+}
+
+.slider label:hover{
+	transform: scale(1.2);
+}
+
+.slider li:nth-child(1) label {
+    left: 13px;
+}
+
+.slider li:nth-child(2) label {
+    left: 370px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
